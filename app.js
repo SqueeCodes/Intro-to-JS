@@ -8,3 +8,12 @@ console.log('123')
  * hi there
  * comments appreciated!
  */
+
+let fullName = 'David Bowen'
+let isRaining = true
+let planet = 'Earth'
+let tempurature = 20
+
+tempurature = tempurature + 2
+
+console.log(tempurature)
