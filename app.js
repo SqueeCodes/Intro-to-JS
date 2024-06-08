@@ -12,8 +12,11 @@ console.log('123')
 let fullName = 'David Bowen'
 let isRaining = true
 let planet = 'Earth'
-let tempurature = 20
 
-tempurature = tempurature + 2
 
-console.log(tempurature)
+let celsius = 10;
+let fahrenheit = celsius * 1.8 + 32;
+console.log(fahrenheit);
+
+let bool = '1' !== 1
+console.log(bool)
