@@ -64,5 +64,26 @@ else if (cash >= price && !isStoreOpen) {
 }
 
 
+// IN ORDER FOR IF STATEMENTS TO RUN THEY NEED TO BE A TRUTHY VALUE
+
+// HOWEVER IN ORDER FOR AN ELSE STATEMENT TO RUN THE "IF" NEEDS TO BE A FALSY VALUE
+
+// eg:
+
+let val = "";
+
+if (val) {
+    console.log(!!val)
+}
+else {
+    console.log(!!val)
+}
+
+// weather functions
+
+
+let hot = ""
+
+hot ? console.log('weather is hot outside!') : console.log('its snowing!')
 
 
