@@ -24,31 +24,31 @@ console.log(bool)
 /* CONDITIONALS */
 
 
-let cash = 50
-let price = 40
-let difference = cash - price
-let isStoreOpen = false
+// let cash = 50
+// let price = 40
+// let difference = cash - price
+// let isStoreOpen = false
 
-if (cash > price) {
-    console.log(`You paid extra - here is ${difference} dollars change`)
-}
-else if (cash === price) {
-    console.log("Thank you for your purchase we look forawrd to serving you again. Bye!")
-}
-else {
-    console.log(`The amount paid is insufficient, amount owed is ${difference * -1} dollars`)
-}
+// if (cash > price) {
+//     console.log(`You paid extra - here is ${difference} dollars change`)
+// }
+// else if (cash === price) {
+//     console.log("Thank you for your purchase we look forawrd to serving you again. Bye!")
+// }
+// else {
+//     console.log(`The amount paid is insufficient, amount owed is ${difference * -1} dollars`)
+// }
 
 
-if (cash >= price) {
-    console.log('we have enough cash to buy the products')
-}
-if (cash >= price && isStoreOpen) {
-    console.log('Print the reciept')
-}
-else if (cash >= price && !isStoreOpen) {
-    console.log('but the store is not open today')
-}
+// if (cash >= price) {
+//     console.log('we have enough cash to buy the products')
+// }
+// if (cash >= price && isStoreOpen) {
+//     console.log('Print the reciept')
+// }
+// else if (cash >= price && !isStoreOpen) {
+//     console.log('but the store is not open today')
+// }
 
 
 // IN ORDER FOR IF STATEMENTS TO RUN THEY NEED TO BE A TRUTHY VALUE
@@ -81,4 +81,11 @@ let hot = ""
 
 hot ? console.log('weather is hot outside!') : console.log('its snowing!')
 
+
+let cash = 40
+let price = 40
+let isStoreOpen = true
+
+let str1 = cash >= price && isStoreOpen ? 'print reciept' : 'do not give reciept'
+console.log(str1);
 
