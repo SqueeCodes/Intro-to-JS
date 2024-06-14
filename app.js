@@ -1,7 +1,7 @@
 console.log('Hello World'[10])
 console.log('12345'.length)
-let str = 'David'
-console.log(str[5 - 1])
+// let str = 'David'
+// console.log(str[5 - 1])
 // console log the numbers 1 to 3
 console.log('123')
 /**
@@ -23,19 +23,6 @@ console.log(bool)
 
 /* CONDITIONALS */
 
-let subscribed = false
-let loggedIn = true
-
-if (subscribed === true) {
-    console.log('show the video')
-}
-else if (loggedIn === true) {
-    console.log('tell the user to upgrade thier subscription')
-}
-else {
-    console.log('tell user to log into the account')
-
-}
 
 let cash = 50
 let price = 40
@@ -79,8 +66,16 @@ else {
     console.log(!!val)
 }
 
-// weather functions
+// turnery operationals
 
+
+
+let subscribed = true
+let loggedIn = true
+
+subscribed ? console.log('user is subscribed') : console.log('please subscribe to view the video')
+let str = subscribed || loggedIn ? 'show the video' : 'hide the video'
+console.log(str);
 
 let hot = ""
 
