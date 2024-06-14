@@ -36,3 +36,17 @@ else {
     console.log('tell user to log into the account')
 
 }
+
+let cash = 192
+let price = 263
+let difference = cash - price
+
+if (cash > price) {
+    console.log(`You paid extra - here is ${difference} dollars change`)
+}
+else if (cash === price) {
+    console.log("Thank you for your purchase we look forawrd to serving you again. Bye!")
+}
+else {
+    console.log(`The amount paid is insufficient, amount owed is ${difference} dollars`)
+}
