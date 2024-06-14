@@ -141,13 +141,40 @@ for (let i = 0; i < celsiusValues.length; i++) {
  
 // ARRAYS
 
-let arr = [20, 30, 40, 50, 100]
+let arr1 = ['A+', 'A', 'FAIL']
+let arr2 = ['FAIL', 'FAIL', 'B']
+let arr3 = ['FAIL']
 
 // console.log(arr[0])
 // /* or use legnth method*/
 // console.log(arr[arr.length - 1 ])
 
 
-let newArr = arr.filter(element => element >= 50)
+function convertCelsiusToFahrenheit(celsius) {
+   return celsius * 1.8 + 32;
+}
 
-console.log(newArr)
+let newArr1 = arr1.filter(element => {
+    if (element === 'FAIL') {
+        return false;
+    }
+    else return true
+})
+console.log(newArr1)
+
+let newArr2 = arr2.filter(element => {
+    if (element === 'FAIL') {
+        return false;
+    }
+    else return true
+})
+console.log(newArr2)
+
+
+let newArr3 = arr3.filter(element => {
+    if (element === 'FAIL') {
+        return false;
+    }
+    else return true
+})
+console.log(newArr3)
