@@ -56,10 +56,10 @@ else {
 if (cash >= price) {
     console.log('we have enough cash to buy the products')
 }
-if (cash >= price && isStoreOpen === true) {
+if (cash >= price && isStoreOpen) {
     console.log('Print the reciept')
 }
-else if (cash >= price && isStoreOpen === false) {
+else if (cash >= price && !isStoreOpen) {
     console.log('but the store is not open today')
 }
 
