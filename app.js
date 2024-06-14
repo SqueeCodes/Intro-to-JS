@@ -138,3 +138,16 @@ for (let i = 0; i < celsiusValues.length; i++) {
     const fahrenheit = convertCelsiusToFahrenheit(celsiusValues[i])
     console.log(`${celsiusValues[i]} degrees Celsius is ${fahrenheit} degrees Fahrenheit`)
 }
+ 
+// ARRAYS
+
+let arr = [20, 30, 40, 50, 100]
+
+// console.log(arr[0])
+// /* or use legnth method*/
+// console.log(arr[arr.length - 1 ])
+
+
+let newArr = arr.filter(element => element >= 50)
+
+console.log(newArr)
