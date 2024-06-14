@@ -89,3 +89,15 @@ let isStoreOpen = true
 let str1 = cash >= price && isStoreOpen ? 'print reciept' : 'do not give reciept'
 console.log(str1);
 
+// LOLOOPS also DRY (DON'T REPEAT YOURSELF!)
+
+
+
+// let count = 1
+
+// while (count <=100) {
+//     console.log(count)
+//     count = count + 1;
+// }
+
+
