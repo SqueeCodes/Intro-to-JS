@@ -1,25 +1,25 @@
-console.log('Hello World'[10])
-console.log('12345'.length)
+// console.log('Hello World'[10])
+// console.log('12345'.length)
 // let str = 'David'
 // console.log(str[5 - 1])
 // console log the numbers 1 to 3
-console.log('123')
+// console.log('123')
 /**
  * hi there
  * comments appreciated!
  */
 
-let fullName = 'David Bowen'
-let isRaining = true
-let planet = 'Earth'
+// let fullName = 'David Bowen'
+// let isRaining = true
+// let planet = 'Earth'
 
 
-let celsius = 10;
-let fahrenheit = celsius * 1.8 + 32;
-console.log(fahrenheit);
+// let celsius = 10;
+// let fahrenheit = celsius * 1.8 + 32;
+// console.log(fahrenheit);
 
-let bool = '1' !== 1
-console.log(bool)
+// let bool = '1' !== 1
+// console.log(bool)
 
 /* CONDITIONALS */
 
@@ -57,37 +57,37 @@ console.log(bool)
 
 // eg:
 
-let val = "";
+// let val = "";
 
-if (val) {
-    console.log(!!val)
-}
-else {
-    console.log(!!val)
-}
+// if (val) {
+//     console.log(!!val)
+// }
+// else {
+//     console.log(!!val)
+// }
 
 // turnery operationals
 
 
 
-let subscribed = true
-let loggedIn = true
+// let subscribed = true
+// let loggedIn = true
 
-subscribed ? console.log('user is subscribed') : console.log('please subscribe to view the video')
-let str = subscribed || loggedIn ? 'show the video' : 'hide the video'
-console.log(str);
+// subscribed ? console.log('user is subscribed') : console.log('please subscribe to view the video')
+// let str = subscribed || loggedIn ? 'show the video' : 'hide the video'
+// console.log(str);
 
-let hot = ""
+// let hot = ""
 
-hot ? console.log('weather is hot outside!') : console.log('its snowing!')
+// hot ? console.log('weather is hot outside!') : console.log('its snowing!')
 
 
-let cash = 40
-let price = 40
-let isStoreOpen = true
+// let cash = 40
+// let price = 40
+// let isStoreOpen = true
 
-let str1 = cash >= price && isStoreOpen ? 'print reciept' : 'do not give reciept'
-console.log(str1);
+// let str1 = cash >= price && isStoreOpen ? 'print reciept' : 'do not give reciept'
+// console.log(str1);
 
 // LOLOOPS also DRY (DON'T REPEAT YOURSELF!)
 
@@ -101,19 +101,40 @@ console.log(str1);
 // }
 
 
-for (let i = 1; i <= 20 ; ++i ) {
-    console.log(i);
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log(`${i} -> Frontend Simplified`)
-    }
-    else if (i % 3 === 0) {
-     console.log(`${i} -> frontend`)
-    }
-    else if (i % 5 === 0) {
-     console.log(`${i} -> Simplified`)
-    }
-    else {
-        console.log(`${i} -> ${i}`)
-    }
+// for (let i = 1; i <= 20 ; ++i ) {
+//     console.log(i);
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         console.log(`${i} -> Frontend Simplified`)
+//     }
+//     else if (i % 3 === 0) {
+//      console.log(`${i} -> frontend`)
+//     }
+//     else if (i % 5 === 0) {
+//      console.log(`${i} -> Simplified`)
+//     }
+//     else {
+//         console.log(`${i} -> ${i}`)
+//     }
 
+// }
+
+// const str = "Frontend Simplified"
+
+// for (let i = 0; i < str.length; ++i) {
+//     console.log(str[i])
+// }
+
+
+//FUNCTION DEFINITION:
+
+function convertCelsiusToFahrenheit(celsius) {
+   return celsius * 1.8 + 32;
+}
+
+const celsiusValues = [0, 10, 30];
+
+/*CALLING THE FUCTION*/
+for (let i = 0; i < celsiusValues.length; i++) {
+    const fahrenheit = convertCelsiusToFahrenheit(celsiusValues[i])
+    console.log(`${celsiusValues[i]} degrees Celsius is ${fahrenheit} degrees Fahrenheit`)
 }
