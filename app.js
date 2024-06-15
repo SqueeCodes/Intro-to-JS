@@ -176,9 +176,6 @@ let arr3 = ['FAIL']
 
 let arr = [1, 5, 10, 3]
 
-let newArray = arr.map((element) => {
-    console.log(element * 100)
-    return element * 100
-})
+let newArray = arr.map(element => element * 100)
 
 console.log(newArray)
