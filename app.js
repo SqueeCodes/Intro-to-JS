@@ -140,7 +140,6 @@ for (let i = 0; i < celsiusValues.length; i++) {
 }
  
 // ARRAYS
-
 let arr1 = ['A+', 'A', 'FAIL']
 let arr2 = ['FAIL', 'FAIL', 'B']
 let arr3 = ['FAIL']
@@ -150,16 +149,26 @@ let arr3 = ['FAIL']
 // console.log(arr[arr.length - 1 ])
 
 
-function convertCelsiusToFahrenheit(celsius) {
-   return celsius * 1.8 + 32;
+// function convertCelsiusToFahrenheit(celsius) {
+//    return celsius * 1.8 + 32;
+// }
+
+// let newArr1 = arr1.filter(element => element !== 'FAIL')
+// console.log(newArr1)
+
+// let newArr2 = arr2.filter(element => element !== 'FAIL')
+// console.log(newArr2)
+
+// let newArr3 = arr3.filter(element => element !== 'FAIL')
+// console.log(newArr3)
+
+let grades = ['A+', 'A', 'FAIL']
+
+let goodGrades = []
+
+for (let i = 0; i < grades.legnth; ++i) {
+    if (grades[i] !== 'FAIL') {
+        goodGrades.push(grades[i]);
+    }
 }
-
-let newArr1 = arr1.filter(element => element !== 'FAIL')
-console.log(newArr1)
-
-let newArr2 = arr2.filter(element => element !== 'FAIL')
-console.log(newArr2)
-
-let newArr3 = arr3.filter(element => element !== 'FAIL')
-console.log(newArr3)
-
+console.log(goodGrades);
