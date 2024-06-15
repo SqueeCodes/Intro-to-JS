@@ -162,13 +162,23 @@ let arr3 = ['FAIL']
 // let newArr3 = arr3.filter(element => element !== 'FAIL')
 // console.log(newArr3)
 
-let grades = ['A+', 'A', 'FAIL']
+// let grades = ['A+', 'A', 'FAIL']
 
-let goodGrades = []
+// let goodGrades = []
 
-for (let i = 0; i < grades.legnth; ++i) {
-    if (grades[i] !== 'FAIL') {
-        goodGrades.push(grades[i]);
-    }
-}
-console.log(goodGrades);
+// for (let i = 0; i < grades.legnth; ++i) {
+//     if (grades[i] !== 'FAIL') {
+//         goodGrades.push(grades[i]);
+//     }
+// }
+// console.log(goodGrades);  
+
+
+let arr = [1, 4, 9, 16]
+
+let newArray = arr.map((element) => {
+    console.log(element)
+    return undefined;
+})
+
+console.log(newArray)
