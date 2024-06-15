@@ -154,27 +154,12 @@ function convertCelsiusToFahrenheit(celsius) {
    return celsius * 1.8 + 32;
 }
 
-let newArr1 = arr1.filter(element => {
-    if (element === 'FAIL') {
-        return false;
-    }
-    else return true
-})
+let newArr1 = arr1.filter(element => element !== 'FAIL')
 console.log(newArr1)
 
-let newArr2 = arr2.filter(element => {
-    if (element === 'FAIL') {
-        return false;
-    }
-    else return true
-})
+let newArr2 = arr2.filter(element => element !== 'FAIL')
 console.log(newArr2)
 
-
-let newArr3 = arr3.filter(element => {
-    if (element === 'FAIL') {
-        return false;
-    }
-    else return true
-})
+let newArr3 = arr3.filter(element => element !== 'FAIL')
 console.log(newArr3)
+
