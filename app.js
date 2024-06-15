@@ -174,11 +174,11 @@ let arr3 = ['FAIL']
 // console.log(goodGrades);  
 
 
-let arr = [1, 4, 9, 16]
+let arr = [1, 5, 10, 3]
 
 let newArray = arr.map((element) => {
-    console.log(element)
-    return undefined;
+    console.log(element * 100)
+    return element * 100
 })
 
 console.log(newArray)
