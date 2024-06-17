@@ -184,4 +184,24 @@ let arr3 = ['FAIL']
 // console.log(cents)
 
 
+let users = [
 
+    {
+        username: "David",
+        email: "Davidbowen@hotmail.com",
+        pasword: "test123",
+        subscriptionStatus: "VIP",
+        discordId: "David#101",
+        lessonsCompleted: [0, 1, 2, 3, 4]
+    },
+    {
+        username: 'Nick',
+        email: 'nickzen@hotmail.com',
+        password: 'test123'
+        subscriptionStatus: 'VIP',
+        discordId: 'Zenic#102',
+        lessonsCompleted: [0, 1, 2,]
+    }
+]
+
+console.log(users[0].lessonsCompleted.map(elem => elem * 2));
