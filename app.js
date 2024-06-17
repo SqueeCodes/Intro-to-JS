@@ -188,7 +188,7 @@ let users = [
 
     {
         username: "David",
-        email: "Davidbowen@hotmail.com",
+        email: "davidbowen@hotmail.com",
         pasword: "test123",
         subscriptionStatus: "VIP",
         discordId: "David#101",
@@ -197,11 +197,27 @@ let users = [
     {
         username: 'Nick',
         email: 'nickzen@hotmail.com',
-        password: 'test123'
+        password: 'test123',
         subscriptionStatus: 'VIP',
         discordId: 'Zenic#102',
         lessonsCompleted: [0, 1, 2,]
     }
 ]
 
-console.log(users[0].lessonsCompleted.map(elem => elem * 2));
+function login(email, password) {
+    for (let i = 0; i < users.length; ++i) {
+        if (users[i].email === email) {
+            console.log(users[i]);
+            if (users[i].password === password) {
+                console.log('User logged in')
+            }
+            else {
+                console.log('user Failed to Log in.')
+            }
+            return;
+        }
+    }
+    console.log('incorrect email')
+}
+
+login('davidbowen@hotmail.com', 'test123');
