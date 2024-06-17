@@ -222,19 +222,45 @@
 
 // login('davidbowen@hotmail.com', 'test123');
 
-users = []
+// users = []
 
-function register (user) {
-    users.push(user);
-}
+// function register (user) {
+//     users.push(user);
+// }
 
-register({
+// register({
 
-    username: "zen",
-    email: "zen@frontendsimplified.com",
-    password: "zen123",
-    subscriptionStatus: "VIP",
-    discordId: "Zen#0001",
-    lessonsCompleted: [0, 1],
-});
-console.log(users);
+//     username: "zen",
+//     email: "zen@frontendsimplified.com",
+//     password: "zen123",
+//     subscriptionStatus: "VIP",
+//     discordId: "Zen#0001",
+//     lessonsCompleted: [0, 1],
+// });
+// console.log(users);
+
+
+
+// "first way of accessing an element"
+
+// console.log(document.querySelector('#title'));
+
+
+// "second method to access the element"
+
+// console.log(document.getElementById('title'))
+
+
+
+// "change html"
+// document.querySelector('.title').innerHTML = 'Frontend Simplified'
+
+
+// "change css"
+// document.querySelector('.title').style.fontSize = '16px'
+
+// function changeTitleToRed() {
+// document.querySelector('.title').style.color = '#FF0000'
+
+//     console.log('clicked');
+// }
