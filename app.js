@@ -127,22 +127,22 @@
 
 //FUNCTION DEFINITION:
 
-function convertCelsiusToFahrenheit(celsius) {
-   return celsius * 1.8 + 32;
-}
+// function convertCelsiusToFahrenheit(celsius) {
+//    return celsius * 1.8 + 32;
+// }
 
-const celsiusValues = [0, 10, 30];
+// const celsiusValues = [0, 10, 30];
 
-/*CALLING THE FUCTION*/
-for (let i = 0; i < celsiusValues.length; i++) {
-    const fahrenheit = convertCelsiusToFahrenheit(celsiusValues[i])
-    console.log(`${celsiusValues[i]} degrees Celsius is ${fahrenheit} degrees Fahrenheit`)
-}
+// /*CALLING THE FUCTION*/
+// for (let i = 0; i < celsiusValues.length; i++) {
+//     const fahrenheit = convertCelsiusToFahrenheit(celsiusValues[i])
+//     console.log(`${celsiusValues[i]} degrees Celsius is ${fahrenheit} degrees Fahrenheit`)
+// }
  
-// ARRAYS
-let arr1 = ['A+', 'A', 'FAIL']
-let arr2 = ['FAIL', 'FAIL', 'B']
-let arr3 = ['FAIL']
+// // ARRAYS
+// let arr1 = ['A+', 'A', 'FAIL']
+// let arr2 = ['FAIL', 'FAIL', 'B']
+// let arr3 = ['FAIL']
 
 // console.log(arr[0])
 // /* or use legnth method*/
@@ -184,40 +184,57 @@ let arr3 = ['FAIL']
 // console.log(cents)
 
 
-let users = [
+// let users = [
 
-    {
-        username: "David",
-        email: "davidbowen@hotmail.com",
-        pasword: "test123",
-        subscriptionStatus: "VIP",
-        discordId: "David#101",
-        lessonsCompleted: [0, 1, 2, 3, 4]
-    },
-    {
-        username: 'Nick',
-        email: 'nickzen@hotmail.com',
-        password: 'test123',
-        subscriptionStatus: 'VIP',
-        discordId: 'Zenic#102',
-        lessonsCompleted: [0, 1, 2,]
-    }
-]
+//     {
+//         username: "David",
+//         email: "davidbowen@hotmail.com",
+//         pasword: "test123",
+//         subscriptionStatus: "VIP",
+//         discordId: "David#101",
+//         lessonsCompleted: [0, 1, 2, 3, 4]
+//     },
+//     {
+//         username: 'Nick',
+//         email: 'nickzen@hotmail.com',
+//         password: 'test123',
+//         subscriptionStatus: 'VIP',
+//         discordId: 'Zenic#102',
+//         lessonsCompleted: [0, 1, 2,]
+//     }
+// ]
 
-function login(email, password) {
-    for (let i = 0; i < users.length; ++i) {
-        if (users[i].email === email) {
-            console.log(users[i]);
-            if (users[i].password === password) {
-                console.log('User logged in')
-            }
-            else {
-                console.log('user Failed to Log in.')
-            }
-            return;
-        }
-    }
-    console.log('incorrect email')
+// function login(email, password) {
+//     for (let i = 0; i < users.length; ++i) {
+//         if (users[i].email === email) {
+//             console.log(users[i]);
+//             if (users[i].password === password) {
+//                 console.log('User logged in')
+//             }
+//             else {
+//                 console.log('user Failed to Log in.')
+//             }
+//             return;
+//         }
+//     }
+//     console.log('incorrect email')
+// }
+
+// login('davidbowen@hotmail.com', 'test123');
+
+users = []
+
+function register (user) {
+    users.push(user);
 }
 
-login('davidbowen@hotmail.com', 'test123');
+register({
+
+    username: "zen",
+    email: "zen@frontendsimplified.com",
+    password: "zen123",
+    subscriptionStatus: "VIP",
+    discordId: "Zen#0001",
+    lessonsCompleted: [0, 1],
+});
+console.log(users);
