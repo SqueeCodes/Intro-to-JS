@@ -264,3 +264,8 @@
 
 //     console.log('clicked');
 // }
+
+
+function toggleDarkMode () {
+    document.querySelector('body').classList.toggle("dark-theme")
+}

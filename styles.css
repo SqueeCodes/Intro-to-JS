@@ -1,3 +1,7 @@
+* {
+    transition: all 400ms ease;
+}
+
 .dark-theme {
     background-color: black;
 }
